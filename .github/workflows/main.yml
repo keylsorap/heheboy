@@ -14,9 +14,8 @@ permissions:
   contents: write # Grants permissions to write to the repo
 
 env:
-  GIT_USER_EMAIL: rxmxdhxni@gmail.com
-  GIT_USER_NAME: dante4rt
-
+  GIT_USER_EMAIL: nurkholisangga@gmail.com
+  GIT_USER_NAME: keylsorap
 jobs:
   ethereum_auto_commit:
     runs-on: ubuntu-latest
@@ -125,8 +124,8 @@ jobs:
 
       - name: Configure Git identity
         run: |
-          git config user.email "nurkholisangga@gmail.com"
-          git config user.name "keylsorap"
+          git config user.email "$GIT_USER_NAME"
+          git config user.name "$GIT_USER_NAME"
 
       - name: Commit changes
         run: |
